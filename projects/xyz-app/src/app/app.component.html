@@ -2,11 +2,21 @@
   <h1 class="bg-primary">XYZ App</h1>
   <button class="btn btn-primary">bootstap from shared lib</button>
 
-  <button [routerLink]="['/feat1']" class="btn btn-primary">open feat1 routed</button>
-  <lib-feature1></lib-feature1>
-
-  <lib-feature2></lib-feature2>
+  <button mat-button routerLink="/feat1" class="btn btn-primary ms-4">open feat1 routed</button>
+  <br>
+  <button mat-raised-button color="primary">mat-raised-button</button>
+  <br>
+  <button mat-stroked-button color="accent">mat-stroked-button</button>
+  <br>
+  <div class="px-5 py-3">
+    <lib-feature1 [data]="'Test Input'"></lib-feature1>
+  </div>
+  <div class="px-5 py-3">
+    <lib-feature2></lib-feature2>
+  </div>
 </div>
 
-
-<router-outlet></router-outlet>
+<div>
+  <p>routed</p>
+  <router-outlet></router-outlet>
+</div>

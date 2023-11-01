@@ -5,7 +5,7 @@ import { Feature1Component } from './feature1.component';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'feat1',
     component: Feature1Component
   },
 ];

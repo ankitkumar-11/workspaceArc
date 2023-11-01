@@ -1,37 +1,16 @@
 import { NgModule } from '@angular/core';
 
-import { MatButton, MatButtonModule } from '@angular/material/button';
+import { MatButtonModule } from '@angular/material/button';
+import { MatTableModule } from '@angular/material/table';
 
 const MaterialComponet =  [
-  // MatButtonModule,
-  // MatButtonModule,
-  // MatCheckboxModule,
-  // MatDatepickerModule,
-  // MatDialogModule,
-  // MatFormFieldModule,
-  // MatIconModule,
-  // MatInputModule,
-  // MatRadioModule,
-  // MatSelectModule,
-  // MatSidenavModule,
-  // MatSlideToggleModule,
-  // MatTableModule,
-  // MatTabsModule,
-  // MatToolbarModule,
-  // MatMenuModule,
-  // MatListModule,
-  // MatCardModule,
-  // MatNativeDateModule,
-  // MatSnackBarModule,
-  // MatPaginatorModule,
-  // MatSortModule
+  MatButtonModule,
+  MatTableModule,
 ]
 
 @NgModule({
   declarations: [],
-  imports: [
-    // MatButton,
-  ],
-  exports: []
+  imports: [MaterialComponet],
+  exports: [MaterialComponet]
 })
 export class SharedMaterialModule { }

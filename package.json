@@ -8,8 +8,9 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "start:xyz":"ng serve --project=beehive-blue --port 4500",
-    "start:abc":"ng serve --project=beehive-red --port 4600"
+    "postinstall": "ngcc",
+    "start:xyz":"ng serve --project=xyzApp --port 4500",
+    "start:abc":"ng serve --project=abcApp --port 4600"
   },
   "private": true,
   "dependencies": {

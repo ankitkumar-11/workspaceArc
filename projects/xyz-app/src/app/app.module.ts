@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { Feature1Module } from 'projects/feature1/src/public-api';
 import { Feature2Module } from 'projects/feature2/src/public-api';
 import { TestComComponent } from './TestCom/TestCom.component';
+import { SharedMaterialModule } from 'projects/shared-material/src/public-api';
 @NgModule({
   declarations: [	
     AppComponent,
@@ -17,7 +18,8 @@ import { TestComComponent } from './TestCom/TestCom.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     Feature1Module,
-    Feature2Module
+    Feature2Module,
+    SharedMaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]
